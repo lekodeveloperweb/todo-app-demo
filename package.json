@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "web": "yarn workspace @eleos/web",
+    "core": "yarn workspace @eleos/core",
+    "predev": "yarn core build",
+    "dev": "yarn web dev --host",
+    "preview": "yarn web preview",
+    "test": "yarn workspaces run test",
+    "build": "yarn workspaces run build"
+  }
+}
